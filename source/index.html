@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- ========== Titulo ========== -->
+    <title>Vendd - Estrutura para afiliados</title>
+
+    <!-- ========== ìcone ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Links css ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/elegant-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon-set.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/validnavs.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/unit-test.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- ========== Fim Link css ========== -->
+
+</head>
+
+<body>
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed white no-background">
+            <div class="container d-flex justify-content-between align-items-center">            
+                <!-- início Header Navegação-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo-vendd-branca.png" class="logo logo-display" alt="Logo">
+                        <img src="assets/img/logo-vendd-branca.png" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <img src="assets/img/logo-vendd-branca.png" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li>
+                            <a href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a href="#recursos">Recursos</a>
+                        </li>
+                        <li>
+                            <a href="#precos">Preços</a>
+                        </li>
+                        <li>
+                            <a href="#tutoriais">Tutoriais</a>
+                        </li>
+                        <li><a href="#faq">Dúvidas</a></li>
+                    </ul>
+                </div>
+                <div class="attr-right">
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="side-menu">
+                                <a id="btn-conta" href="#">Acessar Conta
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- início Side Menu -->
+                    <div class="side">
+                        <a href="#" class="close-side"><i class="icon_close"></i></a>
+                        <div class="widget">
+                            <div class="logo">
+                                <img src="assets/img/logo-vendd-branca.png" alt="Logo">
+                            </div>
+                            <p>
+                                A Vendd é uma plataforma onde você consegue ter suas próprias páginas de vendas, seus próprios domínios e outras ferramentas de forma bem mais simplificada.
+                            </p>
+                        </div>
+                        <div class="widget address">
+                            <div class="p-6"><h1 class="font-bold leading-tight tracking-tight text-gray-900 text-2xl dark:text-white">Acesse sua conta</h1>
+                                <form class="mt-5 space-y-6">
+                                    <div class="relative w-full ">
+                                        <label class="absolute text-sm text-gray-500 dark:text-gray-400 duration-150 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-2/4 peer-placeholder-shown:top-6 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 cursor-text rounded-lg bg-white dark:bg-gray-900 peer-focus:text-blue-600 peer-focus:dark:text-blue-400" for="email">E-mail</label>
+                                        <input class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none dark:autofill:bg-gray-800 dark:text-white dark:border-gray-500 dark:focus:border-blue-700 focus:outline-none focus:ring-0 focus:border-blue-600 peer  " placeholder=" " id="email" autocomplete="off" type="text" name="email">
+                                    </div>
+                                    <div class="relative w-full ">
+                                        <label class="absolute text-sm text-gray-500 dark:text-gray-400 duration-150 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-3 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-2/4 peer-placeholder-shown:top-6 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 cursor-text rounded-lg bg-white dark:bg-gray-900 peer-focus:text-blue-600 peer-focus:dark:text-blue-400" for="pass">Senha</label>
+                                        <input class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none dark:autofill:bg-gray-800 dark:text-white dark:border-gray-500 dark:focus:border-blue-700 focus:outline-none focus:ring-0 focus:border-blue-600 peer  " placeholder=" " id="pass" autocomplete="off" type="password" name="pass">
+                                    </div>
+                                    <div class="flex">
+                                        <a class="text-sm font-semibold text-primary-600 hover:underline dark:text-primary-500" href="login/esqueci-minha-senha">Esqueceu sua senha?</a>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <button type="submit" class="rounded-3xl px-6 py-2 disabled:bg-gray-500 flex flex-row gap-2 items-center transition-all duration-150 bg-vendd-blue-700 hover:bg-vendd-blue-600 active:bg-vendd-blue-500 text-white">Acessar conta</button>
+                                    </div>
+                                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                                        <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="https://www.vendd.app">Não tem uma conta? Comece agora</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget social">
+                            <ul class="link">
+                                <li><a href="https://www.facebook.com/vendd.app" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/vendd.app" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCRAKIEbDJZPLVBr6OcpZ7KA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- fim header navegação-->
+                </div>
+            </div>  
+            <div class="overlay-screen"></div>
+        </nav>
+        <!-- fim Navegação -->
+    </header>
+    <!-- fim Header -->
+
+    <!-- seção início 
+    ============================================= -->
+    <div class="banner-style-one-area overflow-hidden bg-gradient text-light">
+        <div id="inicio" class="banner-style-one">
+            <div class="container">
+                <div class="content">
+                    <div class="row align-center">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="info pr-35 pr-xs-0 pr-md-0">
+                                <h4>Potencialize Seus Resultados!</h4>
+                                <h2>Ferramentas para você vender muito como afiliado ou produtor</h2>
+                                <p>
+                                    Seja como um TOP!! Ferramentas profissionais para turbinar suas vendas!
+                                </p>
+                                <div class="button">
+                                    <a class="btn btn-md btn-theme animation" href="#precos">Quero vender Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="thumb">
+                                <img src="assets/img/illustration/8.png" alt="Thumb">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="shape-bottom-center" style="background-image: url(assets/img/shape/5.png);"></div>
+            <div class="shape-top-right" style="background-image: url(assets/img/shape/6.png);"></div>
+            <div class="shape-left-top" style="background-image: url(assets/img/shape/10.png);"></div>
+        </div>
+    </div>
+    <!-- fim seção início-->
+
+    <!-- início sobre
+    ============================================= -->
+    <div class="about-area circle-shape-right-bottom default-padding">
+        <div class="shape-right-center" style="background-image: url(assets/img/shape/20.png);"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="about-style-four">
+                        <div class="thumb">
+                            <img src="assets/img/illustration/a1.png" alt="Image Not Found">
+                            <img src="assets/img/illustration/9.png" alt="Image Not Found">
+                            <img src="assets/img/icon/progress.png" alt="Image Not Found">
+                            <img src="assets/img/icon/chart.png" alt="Image Not Found">
+                            <div class="shape">
+                                <img src="assets/img/shape/4.png" alt="Image Not Found">
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
+                    <div class="about-style-one">
+                        <h4 class="sub-heading">As Ferramentas Essenciais</h4>
+                        <h2 class="heading">Assista ao vídeo para entender como funciona e quais as vantagens de usar uma estrutura própria:</h2>
+                        <p>
+                            Descubra como ter controle total sobre sua presença online 
+                            pode impulsionar seu negócio para novos patamares de sucesso. 
+                            Aprenda como essa abordagem oferece flexibilidade, personalização e eficácia 
+                            incomparáveis para alcançar seu público-alvo de maneira eficiente. 
+                        </p>
+                        <blockquote>
+                            Explore as vantagens de construir sua própria estrutura digital e 
+                            como isso pode revolucionar sua estratégia de marketing.
+                        </blockquote>
+                        <a href="https://www.youtube.com/watch?v=-jrNF3c8H4M" class="popup-youtube video-play-button with-text">
+                            <div class="effect"></div>
+                            <span><i class="fas fa-play"></i> CLIQUE AQUI PARA ASSISTIR O VÍDEO</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- fim sobre -->
+
+    <!-- início recursos
+    ============================================= -->
+    <div id="recursos" class="default-padding-top bottom-less shape-left-center pb-5">
+        <div class="shape-left-bottom" style="background-image: url(assets/img/shape/12.png);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Ferramentas da Vendd</h4>
+                        <h2 class="title">Você vai se surpreender com tanta facilidade</h2>
+                        <p>
+                            Você não precisa ser um expert para conseguir ter sua própria 
+                            página aqui na Vendd. Mesmo se você estiver começando agora, 
+                            vai conseguir usar todas as nossas ferramentas perfeitamente!
+                        </p>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="relative">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-regular fa-clone"></i>
+                            </div>
+                            <h4><a href="services-details.html">Clonador de páginas</a></h4>
+                            <p>
+                                Em menos de 5 segundos você pode clonar qualquer página de venda e editar. E o melhor é que a Vendd já vai hospedar tudo pra você
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-table-columns"></i>
+                            </div>
+                            <h4><a href="services-details.html">Criador de páginas e pre-sell</a></h4>
+                            <p>
+                                Crie páginas e pre-sells incríveis do seu jeito, ou então importe o arquivo .json <br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h4><a href="services-details.html">Domínio próprio</a></h4>
+                            <p>
+                                Hospede ou compre seu domínio aqui na Vendd e garanta mais desempenho e segurança nos seus anúncios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-brands fa-expeditedssl"></i>
+                            </div>
+                            <h4><a href="services-details.html">Certificado de segurança (SSL)</a></h4>
+                            <p>
+                                Mais segurança para seus domínios. Certificado SSL (https) incluso em todos os planos <br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <h4><a href="services-details.html">Captação de leads (Isca digital)</a></h4>
+                            <p>
+                                Crie um formulário de isca digital com poucos clicks para não perder nenhum cliente que acessa sua página<br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <h4><a href="services-details.html">WhatsApp na página de venda</a></h4>
+                            <p>
+                                E se o seu cliente tiver alguma dúvida? Adicione facilmente um botão do seu WhatsApp em sua nova página clonada para aumentar suas chances de vender!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-table-cells-row-lock"></i>
+                            </div>
+                            <h4><a href="services-details.html">Evite bloqueios nas contas de anúncio</a></h4>
+                            <p>
+                                Com nosso sistema de segurança, vai ser muito mais difícil você ter uma conta de anúncio bloqueada por conta de link
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <h4><a href="services-details.html">Verificação de domínio</a></h4>
+                            <p>
+                                Verifique facilmente seu domínio em qualquer plataforma de anúncio ou de afiliado! <br><br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-barcode"></i>
+                            </div>
+                            <h4><a href="services-details.html">Recuperação de boletos</a></h4>
+                            <p>
+                                O cliente gerou o boleto e não pagou? Nossa ferramenta de recuperação de boletos pode te ajudar a conseguir essa venda e aumentar seu faturamento!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h4><a href="services-details.html">Integração com Google Analytics</a></h4>
+                            <p>
+                                O Google Analytics é a ferramenta de análise de tráfego mais poderosa disponível, e a Vendd torna essa integração possível em seu link de afiliado!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-style-one">
+                        <div class="item">
+                            <div class="bg" style="background-image: url(assets/img/shape/13.png);"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h4><a href="services-details.html">Pixel do Facebook</a></h4>
+                            <p>
+                                Adicione facilmente pixels do Facebook ou qualquer outra plataforma para obter o máximo de desempenho em suas campanhas de conversão
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim recursos -->
+
+    <!-- início Brand 
+    ============================================= -->
+    <div class="brand-area pt-200 pt-xs-80 pt-md-120 pb-200 pb-xs-110 pb-md-170 text-light bg-gradient mt-5">
+        <div class="shape-left-bottom-center">
+            <img src="assets/img/shape/39.png" alt="Image Not Found">
+        </div>
+        <div class="curve-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#ffffff">
+                <path d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="brand-items">
+                <div class="row align-center">
+                    <div class="col-lg-4">
+                        <h2>Para Afiliados e Produtores de Sucesso!</h2>
+                        <h4>A Vendd funciona com todas as plataformas de afiliado disponíveis no mercado nacional e internacional.</h4>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="brand3col swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/monetizzebranca.png" alt="Thumb">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/hotmartbranca.png" alt="Thumb">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/braipbranca.png" alt="Thumb">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/eduzzbranca.png" alt="Thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fun-factor-style-one mt-60 mt-xs-50">
+                <div class="item-inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 item">
+                            <div class="fun-fact">
+                                <div class="counter">
+                                    <div class="timer" data-to="5000" data-speed="2000">1800</div>
+                                    <div class="operator">K</div>
+                                </div>
+                                <span class="medium">Clientes Ativos</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 item">
+                            <div class="fun-fact">
+                                <div class="counter">
+                                    <div class="timer" data-to="98" data-speed="2000">98</div>
+                                    <div class="operator">%</div>
+                                </div>
+                                <span class="medium">Avaliação Positiva</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 item">
+                            <div class="fun-fact">
+                                <div class="counter">
+                                    <div class="timer" data-to="12" data-speed="2000">12</div>
+                                    <div class="operator">M</div>
+                                </div>
+                                <span class="medium">Acessos</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 item">
+                            <div class="fun-fact">
+                                <div class="counter">
+                                    <div class="timer" data-to="15" data-speed="2000">15</div>
+                                    <div class="operator">+</div>
+                                </div>
+                                <span class="medium">Anos de experiência
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim brand -->
+
+    <!-- início Serviços
+    ============================================= -->
+    <div class="services-style-one-area default-padding-bottom bg-gray">
+        <div class="container">
+            <div class="services-style-one-box">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="services-tab-navs">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="false">
+                                    <span class="icon">
+                                        <i class="flaticon-cloud-2"></i> 
+                                    </span>
+                                    <span class="info">
+                                        <b>Personalização Total</b>
+                                        Estratégias de Marketing
+                                    </span>
+                                </button>
+                                <button class="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                    <span class="icon">
+                                        <i class="flaticon-marketing-agent"></i> 
+                                    </span>
+                                    <span class="info">
+                                        <b>Flexibilidade Ilimitada</b>
+                                        Faça ajustes instantâneos
+                                    </span>
+                                </button>
+                                <button class="nav-link" id="nav-id-3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                                    <span class="icon">
+                                        <i class="flaticon-money-management"></i> 
+                                    </span>
+                                    <span class="info">
+                                        <b>Otimização de Recursos</b>
+                                        Agilize todos os Processos
+                                    </span>
+                                </button>
+                                <button class="nav-link" id="nav-id-4" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
+                                    <span class="icon">
+                                        <i class="flaticon-startup-6"></i> 
+                                    </span>
+                                    <span class="info">
+                                        <b>Integração Perfeita</b>
+                                        Comunicação fluida e Eficiente
+                                    </span>
+                                </button>
+                                <button class="nav-link" id="nav-id-5" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="true">
+                                    <span class="icon">
+                                        <i class="flaticon-research-1"></i>
+                                    </span> 
+                                    <span class="info">
+                                        <b>Autonomia</b>
+                                        Decisões rápidas e Eficazes
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7 pl-60 pl-md-15 pl-xs-15 default-padding-top">
+                        <div class="services-style-one">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
+                                    <div class="row">
+                                        <div class="col-xl-6 pr-35 pr-md-15 pr-xs-15">
+                                            <div class="thumb">
+                                                <img src="assets/img/illustration/2.png" alt="illustration">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="info">
+                                                <h2>Desperte o Potencial do seu Negócio</h2>
+                                                <p>
+                                                    Descubra como estratégias de marketing eficientes podem impulsionar o crescimento e o sucesso do seu negócio. Explore os benefícios de investir em abordagens de marketing que geram resultados tangíveis e duradouros.
+                                                </p>
+                                                <ul class="list-standard">
+                                                    <li>Alcance do público certo.</li>
+                                                    <li>Crescimento sustentável.</li>
+                                                    <li>Escala Aprimorada.</li>
+                                                </ul>
+                                                <a class="btn btn-md circle btn-gradient mt-30 animation" href="#precos">Escolher Plano</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
+                                    <div class="row">
+                                        <div class="col-xl-6 pr-35 pr-md-15 pr-xs-15">
+                                            <div class="thumb">
+                                                <img src="assets/img/illustration/10.png" alt="illustration">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="info">
+                                                <h2>Resposta Ágil às Tendências do Mercado</h2>
+                                                <p>
+                                                    Ao ter flexibilidade em suas estratégias de marketing, você pode ajustar suas campanhas rapidamente para capitalizar sobre as últimas tendências e oportunidades do mercado
+                                                </p>
+                                                <ul class="list-standard">
+                                                    <li>Customização de Mensagens.</li>
+                                                    <li>Otimização de Recursos e Orçamento.</li>
+                                                    <li>Expansão de Canais e Plataformas.</li>
+                                                </ul>
+                                                <a class="btn btn-md circle btn-gradient mt-30 animation" href="#precos">Escolher Plano</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-id-3">
+                                    <div class="row">
+                                        <div class="col-xl-6 pr-35 pr-md-15 pr-xs-15">
+                                            <div class="thumb">
+                                                <img src="assets/img/illustration/3.png" alt="illustration">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="info">
+                                                <h2>Impulsione a eficiência e os resultados do seu negócio</h2>
+                                                <p>
+                                                    Explore os benefícios de otimizar suas operações para responder rapidamente às demandas do mercado e às necessidades do seu público-alvo.
+                                                </p>
+                                                <ul class="list-standard">
+                                                    <li>Rapidez na Implementação de Campanhas.</li>
+                                                    <li>Maior Eficiência Operacional.</li>
+                                                    <li>Melhoria na Experiência do Cliente.</li>
+                                                </ul>
+                                                <a class="btn btn-md circle btn-gradient mt-30 animation" href="#precos">Escolher</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="nav-id-4">
+                                    <div class="row">
+                                        <div class="col-xl-6 pr-35 pr-md-15 pr-xs-15">
+                                            <div class="thumb">
+                                                <img src="assets/img/illustration/4.png" alt="illustration">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="info">
+                                                <h2>Maximizando o Potencial da Comunicação com o Lead</h2>
+                                                <p>
+                                                    Saiba como estabelecer uma conexão sólida e significativa com seu público-alvo pode impulsionar a conversão e fidelização de clientes.
+                                                </p>
+                                                <ul class="list-standard">
+                                                    <li>Engajamento Personalizado.</li>
+                                                    <li>Respostas Rápidas e Eficientes.</li>
+                                                    <li>Construção de Relacionamentos Duradouros.</li>
+                                                </ul>
+                                                <a class="btn btn-md circle btn-gradient mt-30 animation" href="#precos">Escolher Plano</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="nav-id-5">
+                                    <div class="row">
+                                        <div class="col-xl-6 pr-35 pr-md-15 pr-xs-15">
+                                            <div class="thumb">
+                                                <img src="assets/img/illustration/12.png" alt="illustration">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="info">
+                                                <h2>Revolucione a forma como você promove seu negócio</h2>
+                                                <p>
+                                                    Os benefícios de ter controle total sobre suas estratégias, recursos e decisões, capacitando-o a alcançar seus objetivos de marketing de maneira mais eficaz e eficiente.
+                                                </p>
+                                                <ul class="list-standard">
+                                                    <li>Customização Personalizada.</li>
+                                                    <li>Agilidade na Implementação.</li>
+                                                    <li>Otimizar tempo e esforços.</li>
+                                                </ul>
+                                                <a class="btn btn-md circle btn-gradient mt-30 animation" href="#precos">Escolher Plano</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim Serviços -->
+
+    <!-- início recursos
+    ============================================= -->
+    <div id="tutoriais" class="project-area default-padding">
+        <div class="shape-left-bottom" style="background-image: url(assets/img/shape/21.png);"></div>
+        <div class="shape-right-top" style="background-image: url(assets/img/shape/22.png);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Tutoriais</h4>
+                        <h2 class="title">Aprenda com a Vendd</h2>
+                        <p>
+                            Veja como configurar sua estrutura para ter o melhor desempenho em suas vendas
+                        </p>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="projects-box">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 single-item">
+                                <div class="project-style-one">
+                                    <div class="video">
+                                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/3newvvntwis?si=EtomFiaqFhemzNS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="content">
+                                        <a class="button" href="https://www.youtube.com/watch?v=3newvvntwis" target="_blank"><i class="fas fa-angle-right"></i></a>
+                                        <h4><a href="https://www.youtube.com/watch?v=3newvvntwis" target="_blank">Facebook</a></h4>
+                                        <ul>
+                                            <li>
+                                                Verificar 
+                                            </li>
+                                            <li>
+                                                Domínio
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 single-item">
+                                <div class="project-style-one">
+                                    <div class="video">
+                                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/FOXAwjD_AN4?si=NqeUqHqlNPAk6LiO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="content">
+                                        <a class="button" href="https://www.youtube.com/watch?v=FOXAwjD_AN4" target="_blank"><i class="fas fa-angle-right"></i></a>
+                                        <h4><a href="https://www.youtube.com/watch?v=FOXAwjD_AN4" target="_blank">Google Ads</a></h4>
+                                        <ul>
+                                            <li>
+                                                Criar
+                                            </li>
+                                            <li>
+                                                Conversão
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 single-item">
+                                <div class="project-style-one">
+                                    <div class="video">
+                                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/rHhxPTe_BPI?si=L8yCZjnzmcJ312tZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="content">
+                                        <a class="button" href="https://www.youtube.com/watch?v=rHhxPTe_BPI" target="_blank"><i class="fas fa-angle-right"></i></a>
+                                        <h4><a href="https://www.youtube.com/watch?v=rHhxPTe_BPI" target="_blank">Hotmart</a></h4>
+                                        <ul>
+                                            <li>
+                                                Enviar conversão
+                                            </li>
+                                            <li>
+                                                Para o google ADS
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 single-item">
+                                <div class="project-style-one">
+                                    <div class="video">
+                                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/U2gOQdWuKl8?si=NWRXissM55u7zsxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="content">
+                                        <a class="button" href="https://www.youtube.com/watch?v=U2gOQdWuKl8" target="_blank"><i class="fas fa-angle-right"></i></a>
+                                        <h4><a href="https://www.youtube.com/watch?v=U2gOQdWuKl8" target="_blank">Hotmart</a></h4>
+                                        <ul>
+                                            <li>
+                                                Configurar pixel
+                                            </li>
+                                            <li>
+                                                do Facebook
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 single-item">
+                                <div class="project-style-one">
+                                    <div class="video">
+                                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/u9POEj7nMA4?si=tv6t-YtuvCsuV-Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="content">
+                                        <a class="button" href="https://www.youtube.com/watch?v=u9POEj7nMA4" target="_blank"><i class="fas fa-angle-right"></i></a>
+                                        <h4><a href="https://www.youtube.com/watch?v=u9POEj7nMA4" target="_blank">Braip</a></h4>
+                                        <ul>
+                                            <li>
+                                                Configurar pixel
+                                            </li>
+                                            <li>
+                                                de Conversão
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 single-item">
+                                <div class="project-style-one">
+                                    <div class="video">
+                                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/vupn2DGMS48?si=nDngedtNMjyR77hX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="content">
+                                        <a class="button" href="https://www.youtube.com/watch?v=vupn2DGMS48" target="_blank"><i class="fas fa-angle-right"></i></a>
+                                        <h4><a href="https://www.youtube.com/watch?v=vupn2DGMS48" target="_blank">Vendd</a></h4>
+                                        <ul>
+                                            <li>
+                                                Recuperação 
+                                            </li>
+                                            <li>
+                                                de Boletos
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-50 mt-xs-0 mt-md-20">
+                        <div class="project-more-info">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4">
+                                    <h2>Benefícios Exclusivos de uma Estrutura Própria</h2>
+                                </div>
+                                <div class="col-xl-5 col-lg-4 pl-35 pl-md-15 pl-xs-15">
+                                    <p>
+                                        Com autonomia total sobre suas ferramentas e estratégias, você pode criar campanhas altamente personalizadas que falam diretamente ao seu público, otimizar seus recursos com eficiência, e adaptar-se rapidamente às mudanças do mercado. 
+                                    </p>
+                                </div>
+                                <div class="bottom-canal col-xl-3 col-lg-4">
+                                    <a class="btn btn-md btn-gradient animation" href="https://www.youtube.com/@vendd" target="_blank">Acessar Canal <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim recursos -->
+
+    <!-- início vantagens
+    ============================================= -->
+    <div class="choose-us-area bg-gray default-padding">
+        <div class="container">
+            <div class="row align-center">
+
+                <div class="col-lg-6">
+                    <div class="choose-us-style-one">
+                        <div class="animate-illustration">
+                            <img src="assets/img/illustration/v.png" alt="illustration">
+                            <div class="sub-item">
+                                <img class="wow pulse" src="assets/img/illustration/v8.png" alt="illustration">
+                                <img class="wow fadeInLeft" data-wow-delay="300ms" src="assets/img/illustration/s5.png" alt="illustration">
+                                <img class="wow fadeInUp" src="assets/img/illustration/v1.png" alt="illustration">
+                                <img class="wow fadeInDown" data-wow-delay="400ms" src="assets/img/illustration/v5.png" alt="illustration">
+                                <img class="wow fadeIn" data-wow-delay="500ms" src="assets/img/illustration/v6.png" alt="illustration">
+                                <img src="assets/img/illustration/v3.png" alt="illustration">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pl-50 pl-md-15 pl-xs-15">
+                    <div class="choose-us-style-one">
+                        <h4 class="sub-heading">Elevando seus resultados</h4>
+                        <h2 class="heading">A plataforma líder em ferramentas no Brasil</h2>
+                        <p>
+                            Estamos comprometidos em profissionalizar suas operações e impulsionar os  seus resultados aumentando brutalmente os seus lucros.
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="list-item">
+                                    <div class="item">
+                                        <h5>Segmentação de Audiência</h5>
+                                        <span>100% Acertiva </span>
+                                    </div>
+                                    <div class="item">
+                                        <h5>Otimização de Conversões </h5>
+                                        <span>Gerando mais vendas.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progressbar">
+                                    <div class="circle" data-percent="98">
+                                        <strong></strong>
+                                    </div>
+                                    <h4>de Aprovação</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim vantagens -->
+
+    <!-- Início Processo 
+    ============================================= -->
+    <div class="process-area text-center bg-cover bg-theme default-padding text-light" style="background-image: url(assets/img/shape/2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Processos Fundamentais para Lucrar em 2024</h4>
+                        <h2 class="title">O passo a passo para Maximizar seus Lucros e Alavancar seu Negócio Online</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="process-style-one-box">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 process-style-one">
+                        <div class="icon">
+                            <img src="assets/img/icon/plan.png" alt="Icon not found">
+                            <span>01</span>
+                        </div>
+                        <h4>Estruturação</h4>
+                    </div>
+                    <div class="col-lg-3 col-md-6 process-style-one">
+                        <div class="icon">
+                            <img src="assets/img/icon/customer-review.png" alt="Icon not found">
+                            <span>02</span>
+                        </div>
+                        <h4>Pesquisa</h4>
+                    </div>
+                    <div class="col-lg-3 col-md-6 process-style-one">
+                        <div class="icon">
+                            <img src="assets/img/icon/target.png" alt="Icon not found">
+                            <span>03</span>
+                        </div>
+                        <h4>Conversão</h4>
+                    </div>
+                    <div class="col-lg-3 col-md-6 process-style-one">
+                        <div class="icon">
+                            <img src="assets/img/icon/megaphone.png" alt="Icon not found">
+                            <span>04</span>
+                        </div>
+                        <h4>lucros</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim Processo -->
+
+    <!-- início depoimentos
+    ============================================= -->
+    <div class="testimonials-area overflow-hidden default-padding">
+        <div class="shape-animation">
+            <img src="assets/img/shape/anim-1.png" alt="Image Not Found">
+        </div>
+        <div class="container">
+            <div class="row align-center">
+                <div class="testimonial-style-one col-xl-4 col-lg-5">
+                    <h4 class="sub-heading">Depoimentos</h4>
+                    <h2 class="heading">Quem usa aprova!</h2>
+                    <div class="rating-provider">
+                        <div class="thumb">
+                            <img src="assets/img/depoimento 1 (1).png" alt="uma mulher de lado olhando">
+                            <img src="assets/img/depoimento 1 (2).png" alt="homem negro de blusa vinho">
+                            <img src="assets/img/depoimento 1 (3).png" alt="mulher">
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <h4>(4.8/5)</h4>
+                            </div>
+                            <span>Baseado em 1.258 avaliações</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-style-one col-xl-8 col-lg-7">
+                    <div class="shape-right-bottom me-2">
+                        <img src="assets/img/shape/anim-2.png" alt="Image not found">
+                    </div>
+                    <div class="depoimentos">
+                        <div class="testimonial-style-one-item">
+                            <iframe class="videos" width="100%" height="100%" src="https://iframe.mediadelivery.net/embed/87164/30782cc3-6e33-44b4-aa31-843effe94174?autoplay=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+                        </div>
+                        <div class="testimonial-style-one-item">
+                            <iframe class="videos" width="100%" height="100%" src="https://iframe.mediadelivery.net/embed/87164/9ac4775d-6ddd-4bc3-8cd2-d6bedb298917?autoplay=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim depoimentos -->
+
+    <!-- início Preços
+    ============================================= -->
+    <div id="precos" class="pricing-area bg-gray default-padding">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Hora de alavancar seu negócio</h4>
+                        <h2 class="title">Preços e Planos!</h2>
+                        <div class="devider"></div>
+                        <div class="nav nav-pill nav-variacoes">
+                            <button type="button" class="button-plan active" data-bs-toggle="tab" data-bs-target="#mensal">Mensal</button>
+                            <button type="button" class="button-plan" data-bs-toggle="tab" data-bs-target="#trimestral">Trimestral</button>
+                            <button type="button" class="button-plan" id="Anual" data-bs-toggle="tab" data-bs-target="#anual">Anual</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1 tab-content">
+                    <div class="pricing-style-one-box tab-pane active" id="mensal">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 pricing-style-one">
+                                <div class="pricing-style-one-item">
+                                    <i class="fas fa-rocket"></i>
+                                    <div class="pricing-header">
+                                        <h4>Iniciante</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>25 <sub>/ Mês</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 10 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para seu domínio próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recupere até 20 boletos por mês</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn mt-25 circle btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-iniciante" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 pricing-style-one active">
+                                <div class="pricing-style-one-item">
+                                    <div class="span badge">Recomendado</div>
+                                    <i class="fas fa-gem"></i>
+                                    <div class="pricing-header">
+                                        <h4>Plus</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>44 <sub>/ Mês</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 25 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para 5 domínios próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recupere até 50 boletos por mês</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn circle mt-25 btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-plus" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 pricing-style-one">
+                                <div class="pricing-style-one-item">
+                                    <i class="fas fa-globe"></i>
+                                    <div class="pricing-header">
+                                        <h4>Profissional</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>65 <sub>/ Mês</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 50 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para seu domínio próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recuperação de boletos ilimitada</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn mt-25 circle btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-profissional" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-style-one-box tab-pane" id="trimestral">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 pricing-style-one">
+                                <div class="pricing-style-one-item">
+                                    <i class="fas fa-rocket"></i>
+                                    <div class="pricing-header">
+                                        <h4>Iniciante</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>75 <sub>/ 3 Meses</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 10 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para seu domínio próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recupere até 20 boletos por mês</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn mt-25 circle btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-iniciante" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 pricing-style-one active">
+                                <div class="pricing-style-one-item">
+                                    <div class="span badge">Recomendado</div>
+                                    <i class="fas fa-gem"></i>
+                                    <div class="pricing-header">
+                                        <h4>Plus</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>132 <sub>/ 3 Meses</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 25 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para 5 domínios próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recupere até 50 boletos por mês</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn circle mt-25 btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-plus" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 pricing-style-one">
+                                <div class="pricing-style-one-item">
+                                    <i class="fas fa-globe"></i>
+                                    <div class="pricing-header">
+                                        <h4>Profissional</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>195 <sub>/ 3 Meses</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 50 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para seu domínio próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recuperação de boletos ilimitada</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn mt-25 circle btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-profissional" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-style-one-box tab-pane" id="anual">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 pricing-style-one">
+                                <div class="pricing-style-one-item">
+                                    <i class="fas fa-rocket"></i>
+                                    <div class="pricing-header">
+                                        <h4>Iniciante</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>300 <sub>/ Ano</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 10 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para seu domínio próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recupere até 20 boletos por mês</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn mt-25 circle btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-iniciante" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 pricing-style-one active">
+                                <div class="pricing-style-one-item">
+                                    <div class="span badge">Recomendado</div>
+                                    <i class="fas fa-gem"></i>
+                                    <div class="pricing-header">
+                                        <h4>Plus</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>528 <sub>/ Ano</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 25 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para 5 domínios próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recupere até 50 boletos por mês</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn circle mt-25 btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-plus" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 pricing-style-one">
+                                <div class="pricing-style-one-item">
+                                    <i class="fas fa-globe"></i>
+                                    <div class="pricing-header">
+                                        <h4>Profissional</h4>
+                                        <span>A partir de</span>
+                                    </div>
+                                    <div class="price">
+                                        <h2><sup>R$</sup>780 <sub>/ Ano</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Clonador de páginas</li>
+                                        <li><i class="fas fa-check"></i> Criador de páginas</li>
+                                        <li><i class="fas fa-check"></i> 50 páginas de venda</li>
+                                        <li><i class="fas fa-check"></i> Domínios grátis</li>
+                                        <li><i class="fas fa-check"></i> Hospedagem para seu domínio próprio</li>
+                                        <li><i class="fas fa-check"></i> Certificado SSL incluso</li>
+                                        <li><i class="fas fa-check"></i> Verificação de domínio no Facebook</li>
+                                        <li><i class="fas fa-check"></i> Captação de leads (Isca digital)</li>
+                                        <li><i class="fas fa-check"></i> PageViews ilimitado</li>
+                                        <li><i class="fas fa-check"></i> Recuperação de boletos ilimitada</li>
+                                        <li><i class="fas fa-check"></i> Relatório de vendas</li>
+                                        <li><i class="fas fa-check"></i> Pixels do Facebook, Google Analytics, Google Ads, e mais</li>
+                                        <li><i class="fas fa-check"></i> Botão do WhatsApp na página</li>
+                                    </ul>
+                                    <a class="btn mt-25 circle btn-md btn-theme animation" href="https://www.vendd.app/produto/plano/plano-profissional" target="_blank">Escolher Esse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim Preços -->
+
+    <!-- início faq
+    ============================================= -->
+    <div id="faq" class="blog-area blog-grid default-padding bottom-less" style="background-image: url(assets/img/shape/28.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Tire suas Dúvidas</h4>
+                        <h2 class="title">Perguntas Frequentes</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-area bg-gray default-padding">
+            <div class="faq-sahpe">
+                <img src="assets/img/illustration/faq1.png" alt="Image Not Found">
+                <img src="assets/img/illustration/faq2.png" alt="Image Not Found">
+            </div>
+            <div class="container">
+                <div class="row perguntas-frequentes">
+                    <div class="col-lg-8 offset-lg-2 faq-style-one">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Como faço para contratar o serviço?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Basta escolher um dos planos acima e efeutar o pagamento. Você receberá as informações de acesso em seu e-mail assim que o pagamento for confirmado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Funciona em qualquer plataforma?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Sim! A Vendd funciona com qualquer plataforma de afiliado, seja nacional ou internacional.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Tem alguma garantia?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Sim! Você tem 7 dias para mudar de ideia e receber seu dinheiro de volta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        É fácil de usar?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Muito fácil! Além dos vídeos explicativos ainda temos uma equipe de suporte pronta para te ajudar no que precisar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Preciso de computador para usar?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Você pode fazer tudo em qualquer dispositivo, computador, celular ou tablet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Possui contrato de fidelidade?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Não, você pode cancelar as renovações futuras do seu plano a qualquer momento.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-2 mt-80 mt-xs-50">
+                        <div class="quick-contact-frame shadow text-center bg-gradient text-light">
+                            <img src="assets/img/shape/16-light.png" alt="Image not found">
+                            <h2>Ainda com Dúvidas?</h2>
+                            <p>
+                                Nossa equipe de suporte está sempre pronta para atender às suas necessidades com rapidez e eficiência. Com profissionais altamente capacitados e dedicados, estamos aqui para resolver quaisquer dúvidas, entre em contato.
+                            </p>
+                            <a class="btn btn-md mt-30 circle btn-dark animation mensagem" href="https://api.whatsapp.com/send?phone=5528999587048&text=Ol%C3%A1%2C+estou+aqui+no+site+da+Vendd+e+tenho+interesse+no+Clonador+de+P%C3%A1ginas+e+na+Estrutra+de+Vendas.+Gostaria+de+mais+informa%C3%A7%C3%B5es"><i class="fab fa-whatsapp me-3"></i>Enviar Mensagem no Whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim Faq -->
+
+    <!-- início Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light" style="background-image: url(assets/img/shape/35.png);">
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-item pr-50 pr-xs-15 pr-md-15">
+                        <div class="about">
+                            <img class="logo" src="assets/img/logo-vendd-branca.png" alt="Logo">
+                            <p>
+                                Leia a descrição de cada plano e veja qual se encaixa melhor para você. Se precisar de alguma ajuda, é só entrar em contato com a gente pelo botão do WhatsApp.
+                            </p>
+                            <ul class="footer-social">
+                                <li>
+                                    <a href="https://www.facebook.com/vendd.app" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/vendd.app" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCRAKIEbDJZPLVBr6OcpZ7KA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-item">
+                        <div class="link">
+                            <h4 class="widget-title">Navegação</h4>
+                            <ul>
+                                <li>
+                                    <a href="#inicio">Início</a>
+                                </li>
+                                <li>
+                                    <a href="#recursos">Recursos</a>
+                                </li>
+                                <li>
+                                    <a href="#precos">Preços</a>
+                                </li>
+                                <li>
+                                    <a href="#tutoriais">Tutoriais</a>
+                                </li>
+                                <li>
+                                    <a href="#duvidas">Dúvidas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-item adress-item">
+                        <h4 class="widget-title">Contatos</h4>
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    <div class="content">
+                                        <strong>Email:</strong>
+                                        <a href="mailto:contato@vendd.app">contato@vendd.app</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <strong>Telefone:</strong>
+                                        <a href="tel:28999587048">(28) 99958-7048</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-item">
+                        <h4 class="widget-title">Pronto para começar?</h4>
+                        <div class="newsletter">
+                            <p>
+                                Escolha um plano para começar!
+                            </p>
+                            <a id="btn-planos-footer" href="#precos">Escolher Plano</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- inicio Footer Bottom -->
+        <div class="footer-bottom bg-dark-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; Copyright 2024 - Vendd - Todos os direitos reservados</p>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <ul>
+                            <li>
+                                <a href="https://www.vendd.app/termos-de-uso" target="_blank">Termos de uso</a>
+                            </li>
+                            <li>
+                                <a href="https://www.vendd.app/politica-de-privacidade" target="_blank">Política de privacidade</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim Footer Bottom -->
+    </footer>
+    <!-- fim Footer -->
+    
+    <!-- plugins
+    ============================================= -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.scrolla.min.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/validnavs.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
